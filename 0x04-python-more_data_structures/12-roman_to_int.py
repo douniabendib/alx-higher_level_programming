@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def subtract(list_num)::q
+def subtract(list_num)
     sub = 0
     max_list = max(list_num)
     for n in list_num:
