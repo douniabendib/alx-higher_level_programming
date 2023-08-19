@@ -26,7 +26,7 @@ def roman_to_int(roman_string):
                     list_num.append(rom_num.get(ch))
                 last_rom = rom_num.get(ch)
                 num = num + subtract(list_num)
-                return (n)
+                return (num)
 
 
                                                                                                                                                                                                              
