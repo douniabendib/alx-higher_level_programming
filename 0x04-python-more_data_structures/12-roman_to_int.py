@@ -4,7 +4,7 @@ def subtract(list_num):
     max_list = max(list_num)
     for n in list_num:
         if max_list > n:
-            sub = n + sub
+            sub = sub + n
             return (max_list - sub)
 def roman_to_int(roman_string):
     if not roman_string:
@@ -20,7 +20,7 @@ def roman_to_int(roman_string):
         for ro_num in keys_list:
             if ro_num == ch:
                 if rom_n.get(ch) <= last_rom:
-                    num = subtract(list_num) + num
+                    num = num + subtract(list_num)
                     list_num = [rom_num.get(ch)]
                 else:
                     list_num.append(rom_num.get(ch))
