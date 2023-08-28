@@ -1,18 +1,18 @@
 #!/usr/bin/python3
 def safe_print_list_integers(my_list=[], x=0):
-    print_integer = 0
+    printed_integers = 0
     try:
         for item in my_list:
             try:
-                formatt_item = "{:d}".format(item)
-                print(formatt_item, end=' ')
-                print_integer += 1
-                if print_integer >= x:
+                formatted_item = "{:d}".format(item)
+                print(formatted_item, end=' ')
+                printed_integers += 1
+                if printed_integers >= x:
                     break
             except ValueError:
                 pass
     except IndexError:
-        pass 
+        pass  
 
-    print() 
-    return print_integer
+    print()
+    return printed_integers
