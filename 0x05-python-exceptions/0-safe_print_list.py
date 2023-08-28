@@ -4,11 +4,11 @@ def safe_print_list(my_list=[], x=0):
 	arg : my_list and x number of element
 	"""
 	print_element = 0
-	try:
-		for i in range(x):
-			print("{}".format(my_list[i]), end = '')
-			print_element += 1
-	except IndexError:
-		break
-	print()
-	return (print_element)
+	for i in range(x):
+        try:
+            print("{}".format(my_list[i]), end="")
+            print_element += 1
+        except IndexError:
+            break
+    print("")
+    return (print_element)
