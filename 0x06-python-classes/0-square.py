@@ -2,5 +2,5 @@
 """Define class"""
 
 class Square:
-    """An empty class called square"""
-    pass
+    	"""An empty class called square"""
+	pass
