@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""define a append a file"""
+"""defines how to append file"""
 
 
 def append_write(filename="", text=""):
-    """how to append a file at end"""
+    """append file"""
     with open(filename, "a", encoding="utf-8") as f:
 	return f.write(text)
