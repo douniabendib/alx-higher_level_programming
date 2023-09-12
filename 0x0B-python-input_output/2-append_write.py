@@ -3,14 +3,14 @@
 
 
 def append_write(filename="", text=""):
-   """how to append a text at end of file
+    """how to append a text at end of file
       
-   Arg:
+    Arg:
         filename (str): name of file
       	text (str):text append at end
 
-   Return:
+    Return:
 	the number of characters added
-   """
-   with open(filename, "a", encoding="utf-8") as f:
-       return f.write(text)
+    """
+    with open(filename, "a", encoding="utf-8") as f:
+        return f.write(text)
