@@ -7,7 +7,7 @@ def append_write(filename="", text=""):
       
     Arg:
         filename (str): name of file
-      	text (str):text append at end
+      	text (str): text append at end
 
     Return:
 	the number of characters added
