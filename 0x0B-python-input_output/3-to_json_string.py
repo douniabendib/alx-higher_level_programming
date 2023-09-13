@@ -1,13 +1,8 @@
 #!/usr/bin/python3
 """Define Json sring"""
+import json
 
 
 def to_json_string(my_obj):
-    """function to represent json.
-
-    Args:
-        my_obj:the object
-    Returns:
-        json representation
-    """
+    """function return json repesent"""
     return my_obj
