@@ -13,13 +13,10 @@ if __name__ == "__main__":
             )
     cursor = db.cursor()
     s_name = sys.argv[4]
-    cursor.execute("""SELECT cities.name 
-    FROM cities INNER
-    JOIN states ON 
-    states.id=cities.state_id 
-    WHERE states=%s""", (s_name,))
+    cursor.execute("""SELECT cities.name FROM cities INNER JOIN 
+    states ON states.id=cities.state_id WHERE states=%s""", (s_name,))
     rows = cursor.fetchall()
     i = list(row[0] for row in rows)
-        print(*i, sep=", ")
+    print(*i, sep=", ")
     cursor.close()
     db.close()
