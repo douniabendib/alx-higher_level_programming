@@ -13,7 +13,7 @@ if __name__ == "__main__":
             )
     cursor = db.cursor()
     s_name = sys.argv[4]
-    cursor.execute("""SELECT cities.name FROM cities INNER JOIN 
+    cursor.execute("""SELECT cities.name FROM cities INNER JOIN
     states ON states.id=cities.state_id WHERE states.name = %s""",
     (s_name, ))
     rows = cursor.fetchall()
