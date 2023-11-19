@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""script that takes in arguments and displays all values"""
+"""list all cities"""
 import MySQLdb
 import sys
 
 if __name__ == "__main__":
-    db = MySQLdb.connect(
+    db = MySQL.connect(
             host="localhost",
             port=3306,
             user=sys.argv[1],
@@ -12,12 +12,10 @@ if __name__ == "__main__":
             db=sys.argv[3]
             )
     cursor = db.cursor()
-    s_name = sys.argv[4]
-    cursor.execute("""SELECT * FROM WHERE name LIKE
-    %s""", (s_name,))
+    cursor.execute("""SELECT cities.id, cities.name, states.name FROM
+    cities INNER JOIN states ON states.id=cities.states_id""")
     rows = cursor.fetchall()
     for row in rows:
         print(row)
     cursor.close()
     db.close()
-
