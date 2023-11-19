@@ -6,6 +6,7 @@ from sqlalchemy.ext.declarative import declarative_base
 mymeta = MetaData()
 Base = declarative_base(metadata=mymeta)
 
+
 class State(Base):
    """class with id and name"""
    __tablename__ = 'states'
