@@ -8,7 +8,7 @@ Base = declarative_base(metadata=mymeta)
 
 
 class State(Base):
-   """class with id and name"""
-   __tablename__ = 'states'
-   id = Column(Integer, primary_key=True, nullable=False, unique=True)
-   name = Column(String(128), nullable=False)
+    """class with id and name"""
+    __tablename__ = 'states'
+    id = Column(Integer, primary_key=True, nullable=False, unique=True)
+    name = Column(String(128), nullable=False)
