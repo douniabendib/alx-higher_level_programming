@@ -11,7 +11,7 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    f = session.query(State).filter(State.name.like('%a%')):
+    f = session.query(State).filter(State.name.like('%a%'))
     for state in f:
         print("{}: {}".format(state.id, state.name))
     
