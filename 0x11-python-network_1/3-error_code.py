@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """ takes in a URL, sends a request and displays error """
 
-
 import sys
 import urllib.request
 import urllib.parse
