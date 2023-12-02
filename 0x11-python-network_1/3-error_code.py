@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" takes in a URL, sends a request to the URL and displays error"""
+""" takes in a URL, sends a request and displays error """
 
 
 import sys
